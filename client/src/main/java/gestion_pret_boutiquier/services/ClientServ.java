@@ -6,7 +6,6 @@ import java.util.List;
 import gestion_pret_boutiquier.Core.Repository;
 import gestion_pret_boutiquier.Core.Service;
 import gestion_pret_boutiquier.Data.Entity.Client;
-import gestion_pret_boutiquier.Data.Entity.Compte;
 
 public class ClientServ implements ClienServInter {
     private Repository<Client> clientRepo;

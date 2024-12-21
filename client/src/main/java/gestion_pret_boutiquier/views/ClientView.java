@@ -7,7 +7,7 @@ import com.google.protobuf.Service;
 
 import gestion_pret_boutiquier.Core.Repository;
 import gestion_pret_boutiquier.Data.Entity.Client;
-import gestion_pret_boutiquier.Data.Entity.Compte;
+ 
 
 public class ClientView  implements ClientViewInter{
      private Scanner scanner = new Scanner(System.in);
@@ -20,14 +20,36 @@ public class ClientView  implements ClientViewInter{
                System.out.println(data.toString());}
 }
      @Override
-     public Client saisie() {
-          System.out.print("Entrez le nom du client : ");
-          String surname = scanner.nextLine();
-          System.out.print("Entrez le numéro de téléphone du client : ");
-          String telephone = scanner.nextLine();
-          System.out.print("Entrez l'adresse du client : ");
-          String adresse = scanner.nextLine();
-          return new Client(surname, telephone, adresse);}
+  
+
+public Client saisie() {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Entrez l'identifiant : ");
+    int id = scanner.nextInt();
+    scanner.nextLine(); // Consommer le retour à la ligne
+
+    System.out.print("Entrez le numéro de téléphone : ");
+    String telephone = scanner.nextLine();
+
+    System.out.print("Entrez le nom : ");
+    String nom = scanner.nextLine();
+
+    System.out.print("Entrez le prénom : ");
+    String prenom = scanner.nextLine();
+
+    System.out.print("Entrez la ville : ");
+    String ville = scanner.nextLine();
+
+    System.out.print("Entrez le quartier : ");
+    String quartier = scanner.nextLine();
+
+    System.out.print("Entrez le numéro de villa : ");
+    String numerovilla = scanner.nextLine();
+
+  
+    return new Client(id, telephone, nom, prenom, ville, quartier, numerovilla);
+}
           
 
           @Override

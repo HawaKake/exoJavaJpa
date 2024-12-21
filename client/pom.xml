@@ -47,6 +47,19 @@
 			</version>
 		</dependency>
 
+        <dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.2.5</version> <!-- Utilisez la version souhaitée -->
+</dependency>
+<dependency>
+    <groupId>org.yaml</groupId>
+    <artifactId>snakeyaml</artifactId>
+    <version>1.30</version> <!-- Vous pouvez choisir la version appropriée -->
+</dependency>
+
+
+
 </dependencies>
 
 </project>
